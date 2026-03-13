@@ -84,7 +84,7 @@ Base on the raw content's language characteristics:
 - **If raw content is conversational** → Can keep dialogue format, more authentic
 - **If raw content is structured notes** → Extract into structured viewpoints
 
-## Platform Constraints
+## Platform Constraints (Social Post Mode)
 
 - **Maximum length**: 1000 characters (Jike platform limit)
 - **Optimal lengths**:
@@ -93,9 +93,9 @@ Base on the raw content's language characteristics:
   - Medium posts: 300-600 characters
   - Deep analysis: 600-1000 characters
 
-## Success Criteria
+## Success Criteria (Social Post Mode)
 
-A good Jike post should:
+A good social post should:
 
 ✅ Can be summarized in one sentence after reading
 ✅ Provides new insights or perspectives
@@ -104,12 +104,53 @@ A good Jike post should:
 ✅ Natural tone, not affected
 ✅ Sparks thought or discussion
 
+## Long-form Article Checklist
+
+When writing articles (not social posts), check these instead:
+
+### Structure
+✅ Heading hierarchy follows 4-6 first-level (##) rule?
+✅ Each middle section has 2-3 sub-headings (###)?
+✅ Intro and conclusion are concise, no sub-headings?
+✅ Narrative arc is clear (why -> how -> what)?
+
+### Content Quality
+✅ No meta-commentary about the session itself? (who asked what, Q&A references)
+✅ Direct quotes used for texture, not for mundane statements?
+✅ Narrator perspective consistent throughout?
+✅ Speaker named consistently (preferred name, not alternating)?
+✅ Supplementary references fetched and integrated?
+
+### Polish
+✅ Every paragraph advances the narrative?
+✅ No redundant transitions ("接下来我们来看...")?
+✅ Facts verified per section via Grep?
+✅ Data points confirmed against transcript?
+✅ ASR homophone sweep done? (beyond proper nouns — check homophones, word boundaries, English transliterations)
+✅ Speaker attribution thinned? (max 2-3 "X说/X认为" per section, not every paragraph)
+✅ Tool/product descriptions compressed? (1-2 sentences of core value, not feature walkthroughs)
+✅ Specific dates replaced with relative time where appropriate?
+✅ Jargon abbreviations normalized to full terms? (RD→研发, PM→产品经理)
+✅ Terminology consistent throughout? (pick one term, use it everywhere)
+
 ## Common Weaknesses to Avoid
 
+### Both Modes
 1. **Meandering opening** - Get to the point immediately
 2. **Circular logic** - Make sure each point advances the argument
 3. **Empty superlatives** - "非常好/特别棒" without specifics
 4. **Hedging too much** - "可能/也许/似乎" weakens impact
 5. **Obvious statements** - Don't state what everyone already knows
 6. **Missing the 'so what'** - Always connect observation to insight
-7. **Over-structuring (CRITICAL for Jike)** - Excessive bold subheadings, numbered lists, transition phrases make it read like PPT/公众号 instead of feed content
+
+### Social Posts Only
+7. **Over-structuring** - Excessive bold subheadings, numbered lists, transition phrases make it read like PPT instead of feed content
+
+### Articles Only
+8. **Over-attribution** - Starting every paragraph with "she says" / "he thinks". Max 2-3 attributions per major section; drop when context makes the speaker obvious
+9. **Meta-commentary** - Describing session mechanics instead of presenting content
+10. **Flat heading hierarchy** - 8+ first-level headings instead of grouping into narrative arcs
+11. **Tool walkthrough transcription** - Copying the speaker's feature-by-feature demo narration instead of distilling to 1-2 sentences of core value
+12. **ASR homophones left uncorrected** - Transcripts contain systematic mishearings beyond proper nouns: homophones (市值→价值), word boundaries (可以呀用→可以用), phonetic English transliterations (Figma妹→Figma Make)
+13. **Specific dates that don't matter** - Using "2026年3月11日" when "周三" suffices. Dates age the article; prefer relative time unless the date is newsworthy
+14. **Jargon abbreviations** - Using insider abbreviations (RD, PM) instead of full terms (研发, 产品经理). Normalize terminology to one consistent form throughout
